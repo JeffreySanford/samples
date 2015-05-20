@@ -1,0 +1,24 @@
+body {
+	width:90%;
+	margin: 0 auto;
+}
+
+#showBiography {
+	display: none;
+}
+
+#userProfile img {
+	width: 150px;
+	height: 150px;
+	float: left;
+}
+
+.clearfix {
+	clear: both;
+	display: block;
+}
+
+footer {
+	position: absolute;
+	bottom: 20px;
+}

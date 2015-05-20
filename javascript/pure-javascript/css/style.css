@@ -1,0 +1,32 @@
+#leftSide {
+	margin-left: 20px;
+	 float: left; 
+	 width: 60%; 
+	 border: 1px solid green;
+	 padding: 20px;
+}
+
+#leftSide h1 {
+	font-size: 1.5em;
+}
+
+#leftSide ul {
+	list-style-type: none;
+}
+
+#leftSide li {
+	font-size: 1.5em;
+	color: blue;
+	list-style-type: none;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+#rightSide {
+	margin-right: 20px;
+	float: right; 
+	width: 25%; 
+	border: 1px solid blue;
+	padding: 20px;
+}
+	

@@ -1,0 +1,167 @@
+html {
+	background-color: white;
+	background-image: url('../img/bright_blue.jpg');
+	background-attachment: fixed;
+	opacity: .7;
+}
+
+h1 {
+	font-size: 1.5em;
+	text-shadow: 2px 2px 5px #000020;
+}
+h2 {font-size: 1.1em;}
+h3 {font-size: 1.0em;}
+h4 {font-size: .9em;}
+
+body {
+	position: relative;
+	width: 90%;
+	font-family: Helvetica;
+	font-size: 1.5em;
+	margin: 0 auto;
+	background-color: lightBlue;
+	opacity: 1;
+	border-radius: 5%;
+
+}
+
+#pageSeconds{
+	position: fixed;
+	font-size: .5em;
+	top: 10px;
+	right: 100px;
+}
+
+header {
+	position: relative;
+	display: block;
+	width:90%;
+	height: 150px;
+	border: 0 solid blue;
+	margin: 0 auto 10px;
+	background-color: lightBlue;
+
+}
+
+#headerGroup {
+	margin: 20px 0 20px 0;
+	padding: 20px;
+}
+
+header img{
+	width: 150px; 
+	height: 150px;
+	float: left;
+	margin-top: -15px;
+}
+
+header h1, header h2, header h3, header nav {
+	text-align: right;
+	color: #000080;
+	margin: 0 1% 0 0;
+	line-height: 1.2em
+}
+
+header nav {
+}
+
+header li {
+	display: inline;
+}
+
+header a {
+	text-decoration: none;
+	color: #000026;
+	font-family: arial;
+	padding: 0 0 0 10px;
+}
+
+header a:hover {
+	color: #000080;
+	border-bottom: 2px solid blue;
+}
+
+#content {
+	display: block;
+	clear: both;
+	width: 90%;
+	margin: 0 auto;
+	border: 0px solid blue;
+	background-color: lightblue;
+}
+
+#content p{
+	font-size: .8em;
+}
+
+#mainBody{
+	float: left;
+	width: 60%;
+	height: 100%;
+	border-right: 0px dashed grey;
+}
+
+#mainBody h1 {
+	color: Blue;
+	font-size: 1.0em;
+}
+
+#mainBody p {
+	font-size: .8em;
+	opacity: 1;
+}
+
+aside {
+	float: right;
+	width: 30%;
+	font-size: .7em;
+	line-height: 1.2;
+	border-left: 0px dashed grey;
+	color: black;
+	text-align: justify;
+	margin:0;
+}
+
+blockquote {
+	font-style: italic;
+	position: relative;
+	margin:0;
+	color: #383838;
+}
+
+blockquote:before {
+	display: block;
+	padding-left: 10px;
+	content: "\201C";
+	font-size: 80px;
+	position: absolute;
+	left: -50px;
+	top: -20px;
+	color: #7a7a7a;
+}
+
+aside h1{
+	text-align: left;
+}
+#sidebar{
+	padding: 1em;
+}
+.spacer{
+	 clear: both;
+}
+
+footer {
+	height: 5%;
+	background-color: darkBlue;
+}
+
+footer li {
+	font-size: .5em;
+	display: inline;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+	font-family: arial;
+}

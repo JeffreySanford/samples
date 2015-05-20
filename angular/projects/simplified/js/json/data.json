@@ -1,0 +1,74 @@
+[
+    {
+        "name":  "Kramer", 
+        "description": "Samuel Noah Kramer was one of the world's leading Assyriologists and a world renowned expert in Sumerian history and Sumerian language.", 
+        "born": "September 28, 1897", 
+        "died": "November 26, 1990",
+        "publications": [
+        {
+            "title": "title one",
+            "description": "description here."
+        },
+        {
+            "title": "title two",
+            "description": "description here."
+        }]
+    }, 
+    {
+        "name":  "Botero", 
+        "description": "Jean Bottéro was a French historian born in Vallauris. He was a major Assyriologist and a renowned expert on the Ancient Near East. He died in Gif-sur-Yvette.", 
+        "born": "30 August 1914", 
+        "died": "15 December 2007",
+        "publications": [
+        {
+            "title": "Ancestor of the West : Writing, Reasoning, and Religion in Mesopotamia, Elam, and Greece",
+            "description": "description here."
+        },
+        {
+            "title": "The Oldest Cuisine in the World: Cooking in Mesopotamia",
+            "description": "description here."
+        },
+        {
+            "title": "Everyday Life in Ancient Mesopotamia",
+            "description": "description here."
+        },
+        {
+            "title": "Religion in Ancient Mesopotamia",
+            "description": "description here."
+        },
+        {
+            "title": "The Birth of God",
+            "description": "description here."
+        }]
+    }, 
+    {
+        "name":  "Thorkild Jacobsen", 
+        "description": "this here", 
+        "born": "2012", 
+        "died": "2012",
+        "publications": [
+            {
+                "title": "title one",
+                "description": "description here."
+            },
+            {
+                "title": "title one",
+                "description": "description here."
+            }]
+    },
+    {
+        "name":  "Kramer", 
+        "description": "this here", 
+        "born": "2012", 
+        "died": "2012",
+        "publications": [
+        {
+            "title": "title one",
+            "description": "description here."
+        },
+        {
+            "title": "title one",
+            "description": "description here."
+        }]
+    }
+]

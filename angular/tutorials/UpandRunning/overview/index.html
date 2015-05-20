@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app=""> <!-- This is a directive - 'a way to teach HTML new tricks'--> 
+	<head>
+		<meta charset="UTF-8">
+		<title>AngularJS Overview</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/lib/angular.js"></script>
+		<script type="text/javascript" src="js/javascript.js"></script>
+	</head>
+	<body>
+		<aside id="infoAbout" ng-app>
+			<!--  Accodians created with http://zachwills.net/how-to-create-an-accordion-with-angular-js/ -->
+			<div>
+			    <div class="accordion__container" ng-controller="myCtrl">
+			        <div class="accordion__tab">
+			            <div class="accordion__tab-title" ng-click="openTab('tab one')">What is Angular.js?</div>
+			            <div class="accordion__tab-content" ng-show="isOpenTab('tab one')">
+							<p>Angular JS is a framework for the javascript programming language.  It is used to create single page websites.  All code will be loaded on one page, even if more than one page.  These are called partial content or partials, that can be used inside the current website.</p>
+							<p>Advantages:</p>
+							<p>Excelent templating engine.  Partial website html (partials) can be inserted into the current HTML.  Much easier. Handles the Document Object Model (DOM).</p>
+			            </div>
+			        </div>
+			        <!-- .accordion__tab -->
+			        <div class="accordion__tab">
+			            <div class="accordion__tab-title" ng-click="openTab('tab two')">Notes from Fundementals of Angular JS by Dan Wahlin</div>
+			            <div class="accordion__tab-content" ng-show="isOpenTab('tab two')">
+							<a href="http://www.youtube.com/watch?v=i9MHigUZKEM">Fundementals</a>
+							<p>SPA  - Single Page Applications</p>
+
+							<ul>
+								<li>The Challanges to SPAs</li>
+								<li>DOM Manipulation</li>
+								<ul>
+									<li>Routing</li>
+									<li>Data Binding</li>
+									<li>History</li>
+									<li>Caching</li>
+									<li>AJAX/Promises</li>
+									<li>Module Loading</li>
+									<li>Object Modeling</li>
+									<li>View Loading</li>
+								</ul>
+							</ul>
+								<p>Angular.JS is a full-featured SPA framework.  If allows for two-way databinding, Movel-View-Controller organization operations, Routing, Testing, jqLite, templates, History and Factories.</p>
+
+								<p>Using filters:</p>
+
+								<div id="CodeSample">
+									<!-- ATTENTION: replace any occurrence of &lt;/xmp with </xmp -->
+									<xmp>
+										<ul data-ng-init="">
+											<li data-ng-repeat="cust in customers | orderBy:'name'">
+												{{ cust.name | uppercase }}
+											</li>
+										</ul>
+										
+										<input type="text" data-ng-model=nameText />
+										<ul>
+											<li data-ng-repeat="cust in customers | filter:nameText | orderBy:'name'">
+												{{ cust.name }} - {{ cust.city }}
+											</li>
+										</ul>
+									</xmp>
+								</div>
+							</div>
+						</div>
+				        <!-- .accordion__tab -->
+				        <div class="accordion__tab">
+				            <div class="accordion__tab-title" ng-click="openTab('tab three')">Todo List</div>
+				            <div class="accordion__tab-content" ng-show="isOpenTab('tab three')">
+								<div id="explination">
+									<p>Directive, filters and data-binding</p>
+									<p>Anytime you see ng- it refers to a directive, ng-app is a built in directive, ng-model creates a property</p>
+								</div>
+				            </div>
+				        </div>
+				        <!-- .accordion__tab -->
+				    </div>
+				</div>
+		</aside>
+		<div id="mainContent" ng-app>
+			<p>Simple ng-repeat directive</p>
+			<ol data-ng-init="names=['Fransis', 'Betty', 'Jane', 'Sharon']">
+				<li data-ng-repeat="name in names">{{ name }}</li>
+			</ol>
+			<h3>This sets up a two-way data binding</h3>
+			Customer:<br />
+			<input type="text" data-ng-model="inputName" /> <p>You entered:  {{inputName}}</p>
+			<p>The above example uses the <b>directive</b> ng-model to set the variable inputName and uses two-way binding to set the html to show the variable inside the expression "{{ double braces }}".  Double braces, or the expression can be tailored with the use of filters.</p>
+			<div id="container" data-ng-init="customers=[{name:'Bob Smith',city:'Portland'}, {name:'Fred Atlantis',city: 'Seattle'}, {name:'William Fredrick', city:'Atlanta'}, {name:'Albert Ruprict', city:'New York'}]">
+				<h3>Looping with the ng-repeat Directive</h3>
+				<ul>
+					<li data-ng-repeat="customer in customers">{{ customer.name }} - {{ customer.city }}</li>
+				</ul>
+			</div>
+		</div>	
+	</body>
+</html>

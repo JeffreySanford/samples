@@ -1,0 +1,76 @@
+THis is a service example:
+
+<p class="codeExamples">
+    (function () {
+        var customersService = function () {
+            var customers = [ /// };
+
+            this.getCutomers = function () {
+                return customers;
+            };
+        };
+    }());
+
+    angular.module('customersApp')
+        .service('customersService', customersService);
+
+</p>
+<p class="notes">
+The service creates an object to be used with the keyword as opposed to the factory, which creates an object as a customer object and is returned on the object.</p>
+
+
+<h2>The $gttp Service</h2>
+
+
+[]The $http service provices AJAX functionality
+
+
+[] Uses the browser's XMLHttpRequest object
+
+
+[]Make asynchronous requests
+
+
+[] Supports multiple HTTP verb:
+
+
+$http.head
+$http.get
+$http.post
+$http.put
+$http.delete
+$http.jsonp
+
+<h2>Using the $http Service</h2>
+
+The $http Service is a asyncronous call to a remote set of data.  It issues a promise that needs to be dealt with.
+
+<p class="codeExamples">
+(function () {
+    var customerFactory = function ($http) {
+        var factory = {};
+        factory.getCustomer = function () {
+            return $http.get('api/customers');
+    };
+    
+    angular.module('customerApp')
+        .factory('customersFactory', customersFactory);
+}());
+</p>
+
+<p>The http request must be handled with the then() or success/failure promise obkects.</p>
+
+$hhtp makes asyncrhromous calls:
+[] relies on the $q service deffered/promise APIs
+[] Access data by calling the then() or success()/error()
+
+<p class="codeExamples">
+customerFactory.getCustomers()
+    .success(function (customers) {    // customers is called from with the controller
+        $scope.customers = customers;  // customers from the $http request is assinged to the scope         })                                 // customers variable
+
+    .error(function (data, status, headers, config) {
+        // errors!
+    });
+</p>
+

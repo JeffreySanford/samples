@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!--  ng-app refers to a directive in the angular framework.  You can find more directives at:
+	https://docs.angularjs.org/api/ng/directive-->
+	<head>
+		<meta charset="UTF-8">
+		<title>Authors Angular.JS</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/javascript.js"></script>
+		<script type="text/javascript" src="js/vendor/angular.js"></script>
+	</head>
+	<body ng-app ng-controller="authorsController">
+		<div id="mainContent">
+			<div id="filterFunction">
+					Filter:
+					<input id="filterBox" type="text" ng-model="name">
+					<p>Dealing with the subject of {{name}}</p>
+					<p><bold>{{ authors.length }}</bold> authors in the database.</p>
+			</div>
+			<div id="authorPrimary" ng-repeat="author in authors | filter : name">
+                <p class="label">Name: {{ author.name }}</p>
+                <p class="label">Description: {{ author.description }}</p>
+                <p class="label">Born: {{ author.born }}</p>
+                <p class="label">Died: {{ author.died }}</p>
+            <p>{{ author.name }} has 
+            {{ author.publications.length }} 
+            publications to their credit.</p> 
+                <div id="publicationPrimary" ng-repeat="publication in author.publications">
+                    <p class="label">Title: {{ publication.title }}</p>
+                    <p class="label">Description:{{ publication.description }}</p>
+                </div>
+            </div>
+        </div>
+		<script>
+            function authorsController($scope,$http) {
+                $http.get("js/json/data.json")
+                .success(function(response) {
+                    $scope.authors = response;
+                });
+            }
+        </script>		
+	</body>
+</html>

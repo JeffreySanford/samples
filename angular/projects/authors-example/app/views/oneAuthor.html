@@ -1,0 +1,23 @@
+<div id="container">
+	<h2>Sumerian Author Page</h2>
+		<select ng-model="author.id">
+			<option ng-repeat="author in authors">{{ author.name }}</option>
+		</select>
+	<br /><br />
+		<div>
+			<p id="authorName">Name:  {{ current.author.name }}</p>
+			<p id="description">Description:  {{current.shortDescription }}</p>
+			<p id="extendedDescription" class="hidden">Exteneded Description: {{current.extendedDescription }}</p>
+			<p id="picture"><img src=""></img>Picture</p>
+			<p id="born">born: {{ author.born }}</p>
+			<p id="born">died: {{ author.died }}</p>
+		</div>
+
+		<table ng-repeat="pub in publications">
+			<tr><td>{{ pub.title }} : {{ pub.subtitle }}</td></tr>
+			<tr><td>{{ pub.description }}</td></tr>
+			<tr><td>{{ pub.ISBN }}</td></tr>
+		</table>
+
+		<span>Total publications: {{ publications.length }}</span>
+</div>

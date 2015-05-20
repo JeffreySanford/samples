@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Show and Hide</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+	<link rel="stylesheet"href="css/style.css"></link>
+</head>
+<body>
+	<div id="container">
+		<h1>Show and Hide Content</h1>
+		<p>This small workup will show and hide content with a click of a checkbox.</p>
+		<br />
+		<div class="row" id="userProfile">		
+			<div class="col-md-4">	
+				<img src="images/male-user.png"></img>
+			</div>
+			<div  class="col-md-8">
+				<p>Name:  <strong><span id="userProfileName">Jim Thompson</span></strong></p>
+				<p>Role:  Developer</p>
+				<p>Birthday:  13 March, 1972</p>
+				<input type="checkbox" id="chkShowContent">Show Biography</input>		
+			</div>
+		<div id="showBiography" class="clearfix">
+			<p>
+				<span>This line should be changed.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis aspernatur doloremque, est minus tenetur illo quia cupiditate! Possimus quae mollitia veniam, necessitatibus illo accusantium culpa quia perferendis impedit temporibus neque.</span>
+				<span>Praesentium eaque beatae, eum odio ab! Officiis dignissimos hic reiciendis quibusdam expedita tenetur. Dolorum nobis ad eveniet, sint deleniti praesentium, laudantium, ipsum facere ut quod esse nihil cum neque adipisci.</span>
+				<span>Voluptate incidunt deleniti tenetur, reprehenderit culpa distinctio placeat ipsa nobis et consectetur eaque fugit ab officia perspiciatis deserunt adipisci id, sit laboriosam blanditiis a. Eos minus reprehenderit odio sit iste.</span>
+			</p>
+		</div>
+		<footer>
+			<p>Application Notes:  This small snipet impliments the gulp webserver.  The configuraion is setup and can be start at the command line with he command "gulp."  Gulp is a fantastic way to automatically run commands like a web server, live-reload, etc.  Visit <a 	href="http://gulpjs.com">Gulp.JS</a> for further configuation options.</p>						
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script></script>
+	<script src="javascript.js"></script>
+
+</body>
+</html>

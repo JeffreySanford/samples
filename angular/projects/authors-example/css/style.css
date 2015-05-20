@@ -1,0 +1,48 @@
+body {
+	font-size: 1em;
+}
+
+nav ul {
+   list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+	font-size: 1.2em;
+	display: inline;
+}
+
+nav ul li:hover {
+	color: blue;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table, th, td {
+   border: 1px solid black;
+}
+
+.clickable:hover {
+	background-color: blue;
+	color: white;
+	cursor: pointer;
+}
+
+#name {
+	width: 10%;
+}
+
+#description {
+	width: 50%;
+}
+
+#born {
+	width: 10%;
+}
+
+#died {
+	width: 10%;
+}

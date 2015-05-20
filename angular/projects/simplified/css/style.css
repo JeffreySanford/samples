@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Lora);
+body {
+    font-family: 'Lora', serif;
+    width: 90%;
+    margin: 20px auto;
+}
+
+#authorPrimary {
+    width: 400px;
+    background-color: lightblue;
+    float: left;
+    padding: 20px;
+    margin: 20px;
+}
+
+#publicationPrimary {
+    background-color: white;
+    border: 1px solid black;
+    margin: 20px 0 0 50px;
+    padding: 20px;
+}

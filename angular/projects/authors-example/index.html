@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" ng-app="SumerianApplication">
+	<head>
+		<title>AngularJS MVC Sumerian Authors</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="#">Authors</a></li>
+				<li><a href="#/author">Author</a></li>
+				<li><a href="#/title">Title</a></li>
+			</ul>
+		</nav>
+
+		<div ng-view></div>
+
+		<script src="js/lib/angular.js"></script>
+		<script src="js/lib/angular-route.js"></script>
+		<script src="app/app.js"></script>
+		<script src="app/controllers/AuthorsController.js"></script>
+		<script src="app/controllers/OneAuthorController.js"></script>
+		<script src="app/controllers/TitlesController.js"></script>
+	</body>
+</html>
