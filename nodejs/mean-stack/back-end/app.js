@@ -19,7 +19,11 @@ app.set('view engine', 'hjs');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+<<<<<<< HEAD
 app.use(cookieParser());
+=======
+app.use(cookieParser());
+>>>>>>> cec3953ac0874beed02ca76b8c082f3d543ae145
 app.use(require('less-middleware')(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 

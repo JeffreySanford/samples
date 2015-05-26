@@ -32,7 +32,6 @@ A.addEventListener('mouseover', function() {
 A.addEventListener('mouseout', function() {
   console.log("icon A section mouse-out");
   teaser.innerHTML = "";
-
 });
 
 A.addEventListener('click', function() {

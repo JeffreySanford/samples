@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="description" content="Javascript Function Tutorials">
+<meta name="keywords" content="Functions,JavaScript">
+<meta name="author" content="Jeffrey Sanford">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Function</title>
+</head>
+<body>
+Four ways of invoking function:
+  <ol>
+  	<li>Functions*</li>
+  	<li>Methods*</li>
+  	<li>Constructors</li>
+  	<li>Call and Apply</li>
+  </ol>  
+<p>*  First two, functions and methods, are most common.
+<p>Invocation patterms
+  <ul>
+  	<li>Recieves arguments and 'this'</li>
+  	<li>Invoking stops curren execution</li>
+  	<li>'this' parameter gets bound to the global scope</li>
+  </ul>
+  <pre>
+function plus (a, b) {
+	return (
+	  console.log(a + b),
+	  console.log(this),
+	  console.log(arugments)
+	  )  
+}
+  </pre>
+<script>
+morePlus(2, 2);
+</script>
+<p>Invoking methods
+<p>A method is a function hat has been assigned as an object.</p>
+<ul>
+  <li>starts and ends with curly braces</li>
+  <li>name and value pairs seperated by colons</li>
+  <li>items are seperated with a comma</li>
+<ul>
+<pre>
+var info = {
+  full_name : "Jeffrey Sanford",
+  title: "author"
+  links : [
+    { blog : "jeffreysanford.github.io"},
+    { twitter: "https://twitter.com/jeffreysanford"}
+  ],
+  plus : function(a,b) {
+    return (
+      console.log(this),
+      console.log(a +b),
+      console.log(arguments),
+      console.log(this.title)
+    )
+  }
+}
+
+</pre>
+
+  <script src="js/javascript.js"></script>
+</body>
+</html>

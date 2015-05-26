@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+	<head>
+		<meta charset="UTF-8">
+		<title>AngularJS MVC Routines</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		<aside>
+			<h1>AngularJS Architecture Patterns</h1>
+			<br />
+			<p>AngularJS relies on two key architecture patterns:</p>
+			<ul>
+				<li>
+					Model-View_controller (MVC)
+				</li>
+				<li>
+					Model-View-ViewModel($scope) (MVVM)
+				</li>
+			</ul>
+			<p>The combination for these two patterns could be refered to as MV*.  Pattern provide prescritive guidance to developers that can be used to build organizaed applications.</p>
+		</aside>
+		<section id="content" ng-controller="CustomersController">
+			<h2>Customers</h2>
+			Filter: <input type="text" ng-model="customerFilter.name">
+			<br /><br />
+			<table border="1">
+				<tr>
+					<th class="clickable" ng-click="doSort('name')">Customer Name</th>
+					<th class="clickable" ng-click="doSort('charges')">Charges</th>
+					<th class="clickable" ng-click="doSort('lastUpdated')">Last Updated</th>
+					<th class="clickable" ng-click="doSort('ordersToDate')">Orders to Date</th>
+				</tr>
+				<tr ng-repeat="cust in customers | filter:customerFilter | orderBy:sortBy:reverse">
+					<td>{{ cust.name }}</td>
+					<td class="right-align">{{ cust.charges | currency:"$" }}</td>
+					<td>{{ cust.lastUpdated }}</td>
+					<td class="center-align">{{ cust.ordersToDate }}</td>
+				</tr>
+			</table>
+			<br /><br />
+			<span>Total customers:  {{customers.length }}</span>
+		</section>
+		<script type="text/javascript" src="js/lib/angular.js"></script>
+		<script type="text/javascript" src="application/controllers/customersController.js"></script>
+	</body>
+</html>

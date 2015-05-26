@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head lang="en">
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/javascript.js"></script>
+	</head>
+	<body>
+		<h1>Input Field PAttern Matching</h1>
+
+			<label for="patternField">Pattern Matching</label>
+			<input name="patternMatch" pattern="Texas" />
+			<input name="patternMatch" pattern=".exas" />
+			<input name="patternMatch" pattern="[tT]exas" />
+			<input name="patternMatch" pattern="[a-z]" />
+			<input name="patternMatch" pattern="[A-za-z0-9 ]+" /><!-- includes a space -->
+			<input name="patternMatch" pattern="[0-9]{16}" />
+			<input name="patternMatch" pattern="\d{4}\-\d{4}-\d{4}-\d{4}" /> <!-- Simple credit card validastion -->
+
+			<p>Build out for RegEX look at: <a href="http://regexpal.com/">RegExPal</a> and <a href="http://html5pattern.com/">HTML5 Patterns</a></p>
+			<div>
+				<p> The form can be accessed by using the developer console typing document.theForm.element </p>
+
+				<p>You can also, using the developer console, modify the element with the type="" identifier.  document.myForm.element.type="radio"</p>
+			</div>
+
+		<form id="theForm" name="theForm" class="group" action="#" method="POST">
+			<fieldset id="login" title="Login Information">
+				<legend>Login Information</legend>
+				<span id="realNameHint" class="hint"></span>
+				<ol>
+					<li>
+						<label for="realName">Name</label>
+						<input type="text" name="realName" id="realName" title="please enter your real name" placeholder="Last name, First Name" required />
+					</li>
+					<li>
+						<span id="emailHint" class="hint"></span>
+						<label for="emailAddress">Email</label>
+						<input type="email" id="emailAddress" required autocomplete="off" />
+					</li>
+					<li class="group">
+						<label for="countyField">County</label>
+						<input name="county" id="countyField" list="counties">
+
+						<datalist id="counties">
+							<option value="Orange">
+							<option value="Seminole">
+							<option value="Valusia">
+							<option value="Brevard">
+						</datalist>
+					</li>
+				</ol>
+			</fieldset>
+			<fieldset>
+			Other comments
+			<button type="submit">send</button>
+			</fieldset>
+		</form>
+	</body>
+</html>

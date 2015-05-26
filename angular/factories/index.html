@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ColorApplication">
+    <head>
+        <meta charset="UTF-8">
+        <title>AngularJS Factories</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <nav>
+            <h1>AngularJS Factories Samples</h1>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#/pageOne">Page One</a></li>
+              <li><a href="#/pageTwo">Page Two</a></li>
+              <li><a href="#/pageThree">Page Three</a></li>
+            </ul>
+        </nav>
+        <div ng-view></div>
+        <script src="js/lib/angular.js"></script>
+        <script src="js/lib/angular-route.js"></script>
+        <acript src="app/app.js"></acript>
+        <script src="app/controllers/MainPageController.js"></script>
+        <script src="app/controllers/PageOneController.js"></script>
+        <script src="app/controllers/PageTwoController.js"></script>
+        <script src="app/controllers/PageThreeController.js"></script>
+        <script src="app/services/ColorFactory.js"></script>
+    </body>
+</html>

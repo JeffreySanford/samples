@@ -1,0 +1,107 @@
+* {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+body {
+	padding-top: 50px;
+}
+
+article {
+	width: 70%; 
+	margin: 0 auto;
+	padding: 0 20px;
+	text-align: justify;
+}
+
+.jumbotron {
+	margin-left: 40px;
+}
+
+.glyphicon {
+	color: #E3A6EC;
+}
+
+.active .glyphicon {
+	color: #663399;
+}
+
+.navbar-inverse {
+  background-color: #000080;
+  color: white;
+  border-color: #080808;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+  font-variant:small-caps;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+	color: blue;
+	background-color: transparent;
+}
+
+.navbar-inverse .navbar-text {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+	color: lightBlue;
+	background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+	color: #fff;
+	background-color: #080808;
+}
+
+.breadcrumb > li + li:before {
+	padding: 0 5px;
+	color: #ccc;
+	content: none;
+}
+
+.jumbotron {
+	width: 40%;
+	margin-right: 30px;
+}
+
+.jumbotron h1 {
+	font-size: 1.7em;
+}
+
+.jumbotron img {
+	margin-top: -5em;
+	margin-right: -60px;
+}
+
+.jumbotron p {
+	font-size: 1.3em;
+	font-style: italic;
+}
+.panel-group {
+	margin-top: 50px;
+}
+
+
+.tab-pane {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 0.8em;
+}
+
+footer {
+	margin: 20px auto;
+	background-color: #000080;
+	color: white;
+	text-align: center;
+	font-size: 1.1em;
+}
