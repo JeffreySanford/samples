@@ -1,6 +1,1 @@
-<<<<<<< HEAD
-front-end/node_modules
-back-end/node_modules
-=======
-/node_modules/*
->>>>>>> cec3953ac0874beed02ca76b8c082f3d543ae145
+node_modules/*
