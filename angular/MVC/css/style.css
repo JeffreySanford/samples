@@ -1,0 +1,34 @@
+body {
+	
+}
+aside {
+	width: 30%;
+	float: right;
+}
+#content {
+	width: 60%;
+	float: left;
+}
+
+table {
+	width: 75%;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+tr {
+}
+
+.clickable:hover {
+	background-color: blue;
+	color: white;
+	cursor: pointer;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.center-align {
+	text-align: center;
+}

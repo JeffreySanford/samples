@@ -1,0 +1,35 @@
+/* Landing Page */
+
+
+
+/* Navigation Bar */
+
+	Home >> 	Realms >>	About Us>> 	Contact
+				* Cities	* Team
+				* Gods
+				* Functions
+	
+/* According articles */
+
+	Current top 4 articles
+
+/* Tabbed articles */
+
+	Overview reference articles with pointers to the actual article sections.
+
+/* photo gallery with modal */
+	Best image for the section with modal to display the image and button to fire to the actual section of the articles.
+	
+/* footer */
+
+What do you want to accomplish:
+
+The landing pae will be a prefact to information contained within the subpages.  The Navigation at the top will be links to the main pages in the site.  The subnavigation will break up into the individual section.  The Photo gallery, on this page will give selected images with model display of the images and button to lead to the main photogallery section - one picture > that section type.
+
+Technology:  Utilize bootstrap the the full effect. Utilize javascript to do basic in page functionality.  Use PHP to pull information from in intrapage database.  Use HTML5 for validation methods, styling and semantics.
+
+Use tool tip to reference complex terms.  Use button popover for description of more information.
+
+
+
+

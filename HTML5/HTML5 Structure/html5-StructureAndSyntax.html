@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Explore HTML5</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/javascript.js"></script>
+	</head>
+	<body>
+		<header>
+			<hgroup>
+				<h1>Welcome to Explore HTML5</h1>
+				<h2>Setting a standard for web development</h2>
+			</hgroup>
+			<nav>
+				<ul>
+					<h3>Navigation:</h3>
+					<li><a href="#">HTML5 Specification</a></li>
+					<li><a href="#">Content Models</a></li>
+					<li><a href="#">Outline</a></li>
+					<li><a href="#">Home</a></li>
+					<p>Navigation section may contain addition descriptive elements</p>
+				</ul>	
+			</nav>
+		</header>
+		<body>
+			<section>
+				<hgroup>
+					<h1>Content Models</h1>
+					<h2>Content models catagories</h2>
+				</hgroup>
+				<p>This page can be referenced as HTML5 Specification <a href="http://www.w3.org/TR/2011/WD-html5-20110525/content-models.html">Content Models</a></p>
+				<ul>
+					<li><a href="#MmetadataContent">Metadata content</a></li>
+					<li><a href="#flowContent.html">Flow content</a></li>
+					<li><a href="#sectioningContent">Sectioning Content</a></li>
+					<li><a href="#phrasingContent">Phrasing content</a></li>
+					<li><a href="#embeddedContent">Embedded content</a></li>
+					<li><a href="#interactiveContent">Interactive content</a></li>
+				</ul> 
+				<p>This website is notes for the Structure and Specification of HTML5.  The inforamtion contained here in can be referenced at the <a href="http://www.w3.org/TR/html5/">W3C HTML5 Specifications site </a></p>
+			</section>
+			<article id="metadataContent">
+			<!--The article elememnt represents a self-contained composition in a document, page, application or site that is, in principle indepently distributable or reusable, that is in syndication.-->
+				<header>
+					<h3>Metadata content</h3>
+					<h4>This is the subtitle to the section</h4>
+				</header>
+				<p>Metadata content is content that sets up the presentation or behavior of the rest of the content, or that sets up the relationship of the document with other documents, or that conveys other "out of band" information.</p>
+				<p>May contain: base, command, link, meta, noscript, script, style, and title</p>
+				<footer>
+					<p>Posted by: User here</p>
+					<p>username@domain.com</p>
+				</footer>
+			</article>
+			<article>
+				<header>
+					<h3>Flow content</h3>
+					<h4>This is the subtitle to the section</h4>
+				</header>
+				<p>Most elements that are used in the body of documents and applications are categorized as flow content.</p>
+				<p>May contain: a abbr address area (if it is a descendant of a map element) article aside audio b bdi bdo blockquote br button canvas cite code command datalist del details dfn div dl em embed fieldset figure footer form h1 h2 h3 h4 h5 h6 header hgroup hr i iframe img input ins kbd keygen label map mark math menu meter nav noscript object ol output p pre progress q ruby s samp script section select small span strong style (if the scoped attribute is present) sub sup svg table textarea time u ul var video wbr text</p>
+				<p>As a general rule, elements whose content model allows any flow content should have either at least one descendant text node that is not inter-element whitespace, or at least one descendant element node that is embedded content. For the purposes of this requirement, del elements and their descendants must not be counted as contributing to the ancestors of the del element.</p>
+				<p>This requirement is not a hard requirement, however, as there are many cases where an element can be empty legitimately, for example when it is used as a placeholder which will later be filled in by a script, or when the element is part of a template and would on most pages be filled in but on some pages is not relevant.</p>
+				<footer>
+					<p>Posted by: User here</p>
+					<p>username@domain.com</p>
+				</footer>
+			</article>		
+			<article>
+				<header>
+					<h3>Sectioning Content</h3>
+					<h4>This is the subtitle to the section</h4>
+				</header>
+				<p>Sectioning content is content that defines the scope of headings and footers.</p>
+				<p>May contain: article aside nav section</p>
+				<p>Each sectioning content element potentially has a heading and an outline. See the section on headings and sections for further details.</p>
+				<p>There are also certain elements that are sectioning roots. These are distinct from sectioning content, but they can also have an outline.</p>
+				<footer>
+					<p>3.2.5.1.3 Sectioning content</p>
+					<p>a href="http://www.w3.org/TR/2011/WD-html5-20110525/content-models.html#sectioning-content-0">Sectioning Content</a></p>
+				</footer>
+			</article>
+			<article>
+				<header>
+					<h3>Heading Content</h3>
+					<h4>This is the subtitle to the section</h4>
+				</header>
+				<p>Heading content defines the header of a section (whether explicitly marked up using sectioning content elements, or implied by the heading content itself).</p>
+				<p>May contain: h1 h2 h3 h4 h5 h6 hgroup</p>
+				<footer>
+					<p>3.2.5.1.3 Heading content</p>
+					<p>a href="http://www.w3.org/TR/2011/WD-html5-20110525/content-models.html#heading-content-0">Sectioning Content</a></p>
+				</footer>
+			</article>
+			<article>
+				<header>
+					<h3>Phrasing Content</h3>
+					<h4>This is the subtitle to the section</h4>
+				</header>
+				<p>Phrasing content is the text of the document, as well as elements that mark up that text at the intra-paragraph level. Runs of phrasing content form paragraphs.</p>
+				<p>May contain: a (if it contains only phrasing content) abbr area (if it is a descendant of a map element) audio b bdi bdo br button canvas cite code command datalist del (if it contains only phrasing content) dfn em embed i iframe img input ins (if it contains only phrasing content) kbd keygen label map (if it contains only phrasing content) mark math meter noscript object output progress q ruby s samp script select small span strong sub sup svg textarea time u var video wbr text</p>
+				<p>As a general rule, elements whose content model allows any phrasing content should have either at least one descendant text node that is not inter-element whitespace, or at least one descendant element node that is embedded content. For the purposes of this requirement, nodes that are descendants of del elements must not be counted as contributing to the ancestors of the del element.</p>
+				<p>Most elements that are categorized as phrasing content can only contain elements that are themselves categorized as phrasing content, not any flow content.</p>
+				<p>Text, in the context of content models, means text nodes. Text is sometimes used as a content model on its own, but is also phrasing content, and can be inter-element whitespace (if the text nodes are empty or contain just space characters).</p>
+				<footer>
+					<p>3.2.5.1.3 Heading content</p>
+					<p>a href="http://www.w3.org/TR/2011/WD-html5-20110525/content-models.html#heading-content-0">Sectioning Content</a></p>
+				</footer>
+
+
+				<article>
+				<header>
+					<h3>Embedded Content</h3>
+					<h4>This is the subtitle to the section</h4>
+				</header>
+				<p>Embedded content is content that imports another resource into the document, or content from another vocabulary that is inserted into the document.</p>
+				<p>May contain: audio canvas embed iframe img math object svg video</p>
+				<p>Elements that are from namespaces other than the HTML namespace and that convey content but not metadata, are embedded content for the purposes of the content models defined in this specification. (For example, MathML, or SVG.)</p>
+				<p>Some embedded content elements can have fallback content: content that is to be used when the external resource cannot be used (e.g. because it is of an unsupported format). The element definitions state what the fallback is, if any.</p>
+				<footer>
+					<p>3.2.5.1.3 Heading content</p>
+					<p>a href="http://www.w3.org/TR/2011/WD-html5-20110525/content-models.html#heading-content-0">Sectioning Content</a></p>
+				</footer>
+			</article>
+			<article>
+				<header>
+					<h3>Interactive Content</h3>
+					<h4>This is the subtitle to the section</h4>
+				</header>
+				<p>Interactive content is content that is specifically intended for user interaction.</p>
+				<p>May contain: a audio (if the controls attribute is present) button details embed iframe img (if the usemap attribute is present) input (if the type attribute is not in the hidden state) keygen label menu (if the type attribute is in the toolbar state) object (if the usemap attribute is present) select textarea video (if the controls attribute is present)</p>
+				<footer>
+					<p>3.2.5.1.3 Heading content</p>
+					<p>a href="http://www.w3.org/TR/2011/WD-html5-20110525/content-models.html#heading-content-0">Sectioning Content</a></p>
+				</footer>
+			<aside>
+				<title>Sidebar</title>
+				<h3>Articles on this page</h3>
+				<h4>Section One</h4>
+				<p>This is a brief description on Article One</p>
+				<h4>Section Two</h4>
+				<p>This is a brief description on Article One</p>
+				<h4>Section Three</h4>
+				<p>This is a brief description on Article One</p>
+			</aside>
+			<footer>
+				<p>All content &copy; Exploring HTML5</p>
+			</footer>
+	</body>
+</html>

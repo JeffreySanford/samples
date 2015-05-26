@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet'' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' />
+    <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h1>{{ title }}</h1>
+          <p>Welcome to {{ title }}</p>
+           <p>There are {{ pages }} records currently.</p>
+           <ul>
+             <li class="glyphicon glyphicon-magnet">&nbsp;</li><br />
+             <li class="glyphicon glyphicon-comment">&nbsp;</li><br />
+             <li class="glyphicon glyphicon-random">&nbsp;</li><br />
+           </ul>
+        </div>
+        <div class="col-md-4" style="border: 1px solid blue; padding: 20px;">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt officia laudantium, consequatur. Doloribus corporis, ab voluptatem, atque molestiae, explicabo illo dolorem illum porro eius ipsam repellat. Cum hic doloremque excepturi?</p>
+        </div>
+      </div>
+    </div>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
+  </body>
+</html>

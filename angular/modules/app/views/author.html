@@ -1,0 +1,29 @@
+<body ng-controller="AuthorsController">
+	<div id="container">
+		<h2>Authors</h2>
+
+		Filter: <input type="text" ng-model="authorFilter.name" />
+		<br /><br />
+		<table>
+			<tr>
+				<th id="name" ng-click="doSort('name')" class="clickable">Name</th>
+				<th id="description" >Description</th>
+				<th id="born" ng-click="doSort('born')" class="clickable">Born</th>
+				<th id="died" ng-click="doSort('died')" class="clickable">Died</th>
+			</tr>
+			<tr ng-repeat="author in authors | filter:authorFilter | orderBy:sortBy:reverse">
+				<td>{{ author.name }}</td>
+				<td>{{ author.description }}</td>
+				<td>{{ author.born | date: 'longDate' }}</td>
+				<td>{{ author.died | date: 'longDate' }}</td>
+			</tr>
+		</table>
+		<br />
+		<span>Total authors: {{ authors.length }}</span>
+	</div>
+	<script src="js/lib/angular.js"></script>
+	<script src="js/lib/angular-route.js"></script>
+	<script src="app/app.js"></script>
+	<!--script src="app/controllers/AuthorsController.js"></script-->
+	<!--  The above script is removed as it was added to the app.js module file -->
+</body>

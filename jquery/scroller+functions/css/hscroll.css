@@ -1,0 +1,158 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+*{
+	font-family: 'Merriweather', serif;
+	color: #3ADF00;
+}
+#header{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 25%;
+	right: 25%;
+	background: rgba(159, 201, 248, 0.7);
+	height: 40px;
+	border: 0px;
+}
+
+#text {
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 'Merriweather', serif;
+	color: #ffffff;
+	line-height: 0px;
+	text-align: center;
+}
+body{
+	/* 
+		#21610B darkgreen
+		#3ADF00 limegreen
+	*/
+	font-family: 'Merriweather', serif;
+	font-color: #3ADF00;
+	font-size: 1em;
+	background-color: #21610B;
+	width: 90%;
+	line-height: 3;
+	padding: 20px;
+ }
+ 
+ .textbox { 
+    border: 1px solid #c4c4c4; 
+    height: 25px; 
+    width: 52%; 
+    font-size: 13px; 
+    padding: 4px 4px 4px 4px; 
+    border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    -webkit-border-radius: 4px; 
+    box-shadow: 0px 0px 8px #d9d9d9; 
+    -moz-box-shadow: 0px 0px 8px #d9d9d9; 
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9; 
+} 
+ 
+.textbox:focus { 
+    outline: none; 
+    border: 1px solid #7bc1f7; 
+    box-shadow: 0px 0px 8px #7bc1f7; 
+    -moz-box-shadow: 0px 0px 8px #7bc1f7; 
+    -webkit-box-shadow: 0px 0px 8px #7bc1f7; 
+}
+
+.textbox:hover { 
+    background-color: #D7EFFF;
+}
+
+#button {
+    background-color: #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+
+#button:hover {
+    border: none;
+    background: red;
+    box-shadow: 0px 0px 1px #777;
+}
+
+#form-wrapper{
+	border: 1px solid red;
+	padding: 20px;
+	font-size: .9em;
+}
+
+.column-left{ 
+	border: 1px solid blue;
+	padding: 20px;
+	float: left; 
+	width: 28%; 
+}
+
+.column-center{ 
+	border: 1px solid blue;
+	padding: 20px;
+	display: inline-block;
+	width: 28%;
+	margin-left: 13px; 
+}
+
+.column-right{ 
+	border: 1px solid blue;
+	padding: 20px;
+	float: right; 
+	width: 28%; 
+}
+
+.column-left label {
+	float: left;
+	margin-left: 20px;
+}
+
+.column-left input {
+	float: right;
+	margin-right: 20px;
+}
+
+.column-center label {
+	float: left;
+	margin-left: 20px;
+}
+
+.column-center input {
+	float: right;
+	margin-right: 20px;
+}
+
+.column-right label {
+	float: left;
+	margin-left: 20px;
+}
+
+.column-right input {
+	float: right;
+	border-right: 50px;
+	margin-right: 20px;
+}
+
+.column-right select{
+	float: right;
+        width: 40%;
+	margin-right: 20px;
+}
+
+#controls-wrapper{
+	display: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+#h3style{
+	color: gray;
+}

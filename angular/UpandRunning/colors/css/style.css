@@ -1,0 +1,60 @@
+body {
+    background-color:  lightBlue;
+    font-family: 'Vollkorn', serif;
+    width: 90%;
+}
+
+header img {
+    float: left;
+    height: 50px;
+    width: 200px;
+}
+
+header h1 {
+    float: right;
+}
+
+ul {
+    float: right;
+    padding: 5px;
+    margin: 0;
+    list-style-type: none;
+    border: 1px solid fuchsia;
+}
+
+nav a {
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: purple;
+}
+
+nav a:hover {
+    background-color: fuchsia;
+    color: white;
+}
+
+li {
+    display: inline;
+    padding: 5px;
+}
+
+.clearFix {
+    clear: both;
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 0 auto;
+}
+
+td {
+    width: 30%;
+    padding: 10px;
+}
+
+tr:nth-child(odd) {
+   background-color: #ccc;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+	<head>
+		<meta charset="UTF-8">
+		<title>AngularJS MVC Routines</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		<aside>
+			<h1>AngularJS Architecture Patterns</h1>
+			<br />
+			<p>AngularJS relies on two key architecture patterns:</p>
+			<ul>
+				<li>
+					Model-View_controller (MVC)
+				</li>
+				<li>
+					Model-View-ViewModel($scope) (MVVM)
+				</li>
+			</ul>
+			<p>The combination fo these two patterns could be refered to as MV*.  Pattern provide prescritive guidance to developers that can be used to build organizaed applications.</p>
+		</aside>
+		<section id="content" ng-init="customers= [
+					{name:'Bill Smith', charges:'3945.45', lastUpdated:'2012-12-02', ordersToDate: 5},
+					{name:'Fred Jones', charges:'4434.10', lastUpdated:'2012-12-02', ordersToDate: 2},
+					{name:'Sophia Barnes', charges:'5234.25', lastUpdated:'2012-12-02', ordersToDate: 7},
+					{name:'Betty Holland', charges:'61234.43',lastUpdated:'2011-08-04', ordersToDate: 8}
+				]">
+			<table>
+				<tr>
+					<td>Customer Name</td>
+					<td>Charges</td>
+					<td>Last Updated</td>
+					<td>Orders to Date</td>
+				</tr>
+				<tr ng-repeat="cust in customers">
+					<td>{{ cust.name }}</td>
+					<td>{{ cust.charges }}</td>
+					<td>{{ cust.lastUpdated }}</td>
+					<td>{{ cust.ordersToDate }}</td>
+				</tr>
+			</table>
+		</section>
+		<script type="text/javascript" src="js/lib/angular.js"></script>
+	</body>
+</html>

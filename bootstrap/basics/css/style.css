@@ -1,0 +1,110 @@
+* {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+body {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.container {
+	margin: 30px auto;
+	width: 80%;
+	height: 30%;
+	padding: 5px;
+	background-color: #dedef8;
+	box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;
+}
+header {
+	display: inline-block;
+	float: left;
+}
+
+#titleSection {
+	width: 40%;
+	display: inline-block;
+	float: right;
+}
+
+#titleSection h3, p{
+	display: block;
+}
+
+header img {
+	width: 40%;
+}
+
+header h1 {
+	margin: 10px 20px;
+	font-size: 1.8em;
+}
+
+header h3 {
+	margin: 10px 20px;
+	font-size: 1.4em;
+	font-style: italic;
+}
+
+header p {
+	margin: 0 20px;
+	font-size: 1.0em;
+	margin-top: 20px;
+}
+
+section {
+	border: 1px solid black;
+	background-color: rgba(51, 204, 0, .2);
+}
+
+article {
+	width: 24%;
+	margin: 40px .5em 0 0;
+}
+
+article img {
+	float: left;
+	width:  100px;
+	height: 100px;
+	border: 1px solid red;
+	margin: 0 10px 0 20px;
+
+}
+
+article h2 {
+	margin: 0 10px 0 0;
+	font-size: 1.1em;
+}
+
+article p {
+	font-size: 1em;
+	padding: 0 20px 0 20px;
+	text-align:  justify;
+}
+
+.spacer {
+	clear: both;
+}
+
+footer {
+	font-size: 1.3em;
+	font-weight: bold;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.copyright {
+	font-size: .8em;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#sizer p {
+	font-size: .9em;
+	font-weight: normal;
+	text-align: left;
+	color: #000;
+	line-height: 1;
+}
+
+#sizer p p {
+	text-align: center;
+}

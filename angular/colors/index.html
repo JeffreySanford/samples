@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+    <head>
+        <meta charset="UTF-8">
+        <title>AngularJS Color Sample</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link href="//fonts.googleapis.com/css?family=Vollkorn:400italic,400,700italic,700" rel="stylesheet" type="text/css">
+        <script src="js/lib/angular.js"></script>
+		<script src="js/lib/angular-route.js"></script>
+		<script src="app/app.js"></script>
+    </head>
+    <body>
+        <header>
+           <img src="img/AngularJS_logo.png" alt="AngularJS logo"></img>
+            <h1>AngularJS</h1>
+            <nav class="clearFix">
+                <ul>
+                    <li><a href="">Main</a></li>
+                    <li><a href="#/one">subOne</a></li>
+                    <li><a href="#/two">subTwo</a></li>
+                    <li><a href="#/three">subThree</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h2  class="clearFix">Instantiating the factory component</h2>
+        <div id="container" ng-init= "colors = [{ colorID: '0', color: 'black', hexcode: '#000000' },{ colorID: '1', color: 'brown', hexcode: '#ffffff' },{ colorID: '2', color: 'red', hexcode: '#ffffff' },{ colorID: '3', color: 'orange', hexcode: '#ffffff' },{ colorID: '4', color: 'yellow', hexcode: '#ffffff' },{ colorID: '5', color: 'green', hexcode: '#ffffff' },{ colorID: '6', color: 'blue', hexcode: '#ffffff' },{ colorID: '7', color: 'violet', hexcode: '#ffffff' },{ colorID: '9', color: 'gold', hexcode: '#ffffff' },{ colorID: '0', color: 'white', hexcode: '#ffffff' }]">
+            <p>Injected HTML INFORMATION</p>
+               {{ colors }}
+                <br /><br />
+            <tr ng-repeat="color in colors">
+                <td>{{ color.number }}</td>
+                <td>{{ color.name }}</td>
+                <td>{{ color.hexcode }}</td>
+            </tr>
+        </div>
+<!--
+   		<script src="app/controller/MainPageController.js"></script>
+		<script src="app/controller/OneController.js"></script>
+		<script src="app/controller/TwoController.js"></script>
+        <script src="app/services/factory/ColorFactory.js"></script
+-->
+        
+    </body>
+</html>

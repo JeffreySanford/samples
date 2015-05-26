@@ -1,0 +1,44 @@
+body {
+    background-color:  lightBlue;
+    font-family: 'Vollkorn', serif;
+}
+
+header img {
+    float: left;
+    height: 50px;
+    width: 200px;
+}
+
+header h1 {
+    float: right;
+}
+
+ul {
+    float: right;
+    padding: 5px;
+    margin: 0;
+    list-style-type: none;
+    border: 1px solid fuchsia;
+}
+
+a {
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: purple;
+}
+
+a:hover {
+    background-color: fuchsia;
+    color: white;
+}
+
+li {
+    display: inline;
+    padding: 5px;
+}
+
+.clearFix {
+    clear: both;
+    display: block;
+}

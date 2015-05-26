@@ -1,0 +1,53 @@
+body {
+    font-family: 'Poiret One', cursive;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #a8ecb4;
+}
+
+/*  Mint:   #a8ecb4
+    Lilac:  #b4a8eb
+    Peach:  #ebb4a8
+ */
+
+aside {
+    width: 20%;
+    float: right;
+    background-color: #ebb4a8;
+}
+
+section {
+    width: 80%;
+    float: left;
+    background-color: #b4a8eb;
+}
+
+header {
+  background-color: lightBlue;
+  padding: 0 10px;
+}
+
+header h1 {
+  text-shadow: 2px 2px #aaaaaa;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    border-right:  1px solid black;
+}
+
+a {
+    display: block;
+    width: 90px;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2em;
+
+}

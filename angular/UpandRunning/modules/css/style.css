@@ -1,0 +1,33 @@
+body {
+	font-size: 1em;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table, th, td {
+   border: 1px solid black;
+}
+
+.clickable:hover {
+	background-color: blue;
+	color: white;
+	cursor: pointer;
+}
+
+#name {
+	width: 10%;
+}
+
+#description {
+	width: 50%;
+}
+
+#born {
+	width: 10%;
+}
+
+#died {
+	width: 10%;
+}

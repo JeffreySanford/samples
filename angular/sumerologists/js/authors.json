@@ -1,0 +1,171 @@
+[{
+  "name" : "Samuel Noah Kramer",
+  "description" : "Samuel Noah Kramer was one of the world's leading Assyriologists and a world renowned expert in Sumerian history and Sumerian language.",
+  "born" : "September 28, 1897", 
+  "died" : "November 26, 1990",
+  "publications" : [{
+    "title" : "Sumerian Mythology",	
+    "subtitle" : "Study of Spiritual and Literary Achievement in the Third Millennium B.C.", 
+    "additionalAuthor" : "",
+      "publisher" : [{
+        "name" : "", 
+        "location" : "",
+          "editions" : [{
+            "first" : [{
+              "date" : "1944",
+              "title" : "", 
+              "ISBN" : ""
+              }],
+            "second" : [{
+              "date" : "1961",
+              "title" : "",
+              "ISBN" : ""
+              }]
+            }]
+        }]
+    },
+    {
+	"title" : "History Begins at Sumer", 
+    "subtitle" : "Thirty-Nine Firsts in Man's Recorded History", 
+    "additionalAuthor" : "",
+    "publisher" : [{ 
+      "name" : "University of Pennsylvania Press", 
+      "location" : "Pennsylvania",
+        "editions" : [{
+          "first" : [{
+            "date" : "1956", 
+            "title" : "Twenty-Five Firsts in Man's Recorded History",
+            "ISBN" : "0-8122-7812-7" 
+          }],
+          "second" : [{
+            "date" : "1959", 
+            "title" : "Twenty-Seven Firsts in Man's Recorded History",
+            "ISBN" : ""
+          }],
+          "third" : [{	
+            "date" : "1981",
+            "title" : "Thirty-Nine Firsts in Man's Recorded History",
+            "ISBN" : "" 
+          }]
+        }]
+      }]
+    },
+    {
+    "title" : "The Sumerians",
+    "subtitle" : "Their History, Culture and Character",
+    "additionalAuthor" : "",
+    "publisher" : [{
+      "name" : "University of Pennsylvania Press",
+      "location" : "Chicago, IL",
+        "editions" : [{
+          "first" : [{
+            "date" : "1963",
+            "title" : "",
+            "ISBN" : "0-226-45238-7"
+          }]							
+        }]
+    }]
+    },
+    {
+    "title" : "Inanna",
+    "subtitle" : "Queen of Heaven and Earth",
+    "additionalAuthor" : "Diane Wolkstein",
+      "publisher" : [{
+        "name" : "Harper & Row",
+        "location" : "New York",
+        "editions" : [{
+          "first" : [{ 
+            "date" : "1983",
+            "title" : "",
+            "ISBN" : "0-06-090854-8"
+          }]
+        }]	
+      }]
+    },
+    {				
+    "title" : "In the World of Sumer",
+    "subtitle" : "An Autobiography",
+    "additionalAuthor" : "",
+      "publisher" : [{
+        "name" : "Wayne State University Press",
+        "location" : "New York",
+        "editions" : [{
+          "first" : [{ 
+            "date" : "1988",
+            "title" : "",
+            "ISBN" : "0-8143-1785-5"
+          }]
+        }]	
+      }]
+    }]
+    },
+    {
+    "name" : "Jean Bottéro",
+    "description" : "Jean Bottéro was a French historian born in Vallauris. He was a major Assyriologist and a renowned expert on the Ancient Near East. He died in Gif-sur-Yvette.",
+    "born" : "30 August 1914",
+    "died" : "15 December 2007",
+    "publications" : [{
+      "title" : "The Oldest Cuisine in the World",
+      "subtitle" : "Cooking in Mesopotamia",
+      "additionalAuthor" : "",
+        "publisher" : [{
+          "name" : "",
+          "location" : "",
+          "editions" : [{
+            "first" : [{ 
+              "date" : "1982",
+              "title" : "",
+              "ISBN" : "0-8143-1785-5"
+            }]
+          }]	
+        }]
+    },
+    {
+      "title" : "Everyday Life in Ancient Mesopotamia",
+      "subtitle" : "",
+      "additionalAuthor" : "",
+      "publisher" : [{
+        "name" : "",
+        "location" : "",
+        "editions" : [{
+          "first" : [{
+          "date" : "1982",
+          "title" : "",
+          "ISBN" : ""
+          }]
+        }]
+      }]
+    },
+    {
+      "title" : "Religion in Ancient Mesopotamia",
+      "subtitle" : "",
+      "additionalAuthor" : "",
+      "publisher" : [{
+        "name" : "",
+        "location" : "",
+        "editions" : [{
+          "first" : [{
+          "date" : "1982",
+          "title" : "",
+          "ISBN" : ""
+          }]
+        }]
+      }]
+    },
+    {
+      "title" : "The Birth of God",
+      "subtitle" : "",
+      "additionalAuthor" : "",
+      "publisher" : [{
+        "name" : "",
+        "location" : "",
+        "editions" : [{
+          "first" : [{
+          "date" : "",
+          "title" : "",
+          "ISBN" : ""
+          }]
+        }]
+      }]
+    }]
+  }]
