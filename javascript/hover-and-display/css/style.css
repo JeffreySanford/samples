@@ -7,7 +7,9 @@ body{
   float: right;
 }
 .left-side {
-  width: 75%;
+  width: 70%;
   float: left;
   border: 1px solid blue;
-} 
+  padding: 25px;
+  min-height: 300px;
+}

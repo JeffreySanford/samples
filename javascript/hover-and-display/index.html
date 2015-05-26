@@ -3,7 +3,7 @@
     <head>
       <meta charset="UTF-8">
       <title>Show and Hide Content</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
 	<body>
 	  <section class="left-side">
@@ -11,14 +11,16 @@
         <p>This is a sample application to show content when the user hovers over the aside elemment.  When the user blurs the element the conent will be hidden.  Evenually this information will pull from a RESTful service.</p>
 
           <aside>
-            <p>Content will display here:</p>
-            <p class="displayContent">Show this</p>
-            <p>End Content</p>
+
+            <div id="teaser"><p>Teaser will show here</p></div>
+
+            <div id="paragraph"><p>Paragraph will display here</p></div>
+
           </aside>
 
       </section>
       <aside class="right-side">
-      	<h1 style="font-size: .4em;">List of Items</h1>
+      	<h1 style="font-size: 1em;">List of Items</h1>
       	<p id="selectionA">A<p>
       	<p id="selectionB">B<p>
       	<p id="selectionC">C<p>
